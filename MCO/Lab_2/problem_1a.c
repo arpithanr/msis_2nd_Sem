@@ -28,61 +28,24 @@ int main(){
     printf("Enter the target element to search: \n");
     scanf("%d", &target);
 
-    int found =0;
-
+    int found = 0;
     for(int i=0; i<rows; i++)
     {
         for(int j=0; j<cols; j++)
         {
             if(mat[i][j] == target)
             {
-                printf("Element %d is present in the matrix. \n", target); // element found
                 found = 1;
                 break;
             }       
         }
-        if(found)
-            break;
     }
-    if(!found)
-    {
-        
-    }
-    return 0;
-}
-
-/*
-// Function to search for a given element in a matrix
-int search(int mat[][3], int rows, int cols, int key) {
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
-            if (mat[i][j] == key) {
-                return 0; // Key found
-            }
-        }
-    }
-    return -1; // Key not found
-}
-
-int main() {
-    // Example matrix
-    int matrix[3][3] = {{1, 2, 3},
-                        {4, 5, 6},
-                        {7, 8, 9}};
-
-    // Example target element
-    int target = 5;
-
-    // Calling the search function
-    int result = search(matrix, 3, 3, target);
-
-    // Output based on the result
-    if (result == 0) {
-        printf("Element found in the matrix.\n");
+     if (found == 1) {
+        printf("Element %d found in the matrix.\n" , target);
     } else {
-        printf("Element not found in the matrix.\n");
+        printf("Element %d not found in the matrix.\n", target);
     }
 
     return 0;
-} */
+}
 
