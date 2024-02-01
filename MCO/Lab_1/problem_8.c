@@ -11,6 +11,7 @@ output the value.*/
 #include <time.h>
 #define row 20
 #define column 50
+
 int arr[row][column];
 
 int generate_rand(int min,int max)
