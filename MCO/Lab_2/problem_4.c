@@ -3,42 +3,37 @@ matrix. The program should take a matrix as input, compute
 its transpose, and display the result.*/
 
 #include <stdio.h>
+#include <stdlib.h>
 
-void find_transpose(int mat[][100], int rows, int cols) {
-    int transpose[cols][rows];  // Transpose matrix
-
-    // Swap rows and columns to create the transpose
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
-            transpose[j][i] = mat[i][j];
-        }
-    }
-
-    // Print the transpose matrix
-    printf("Transpose of the matrix:\n");
-    for (int i = 0; i < cols; i++) {
-        for (int j = 0; j < rows; j++) {
-            printf("%d ", transpose[i][j]);
+void transpose(int *mat, int row, int col);
+int main()
+{
+    int i, j;
+    int mat[3][4];
+    for (i = 0; i < 3; i++)
+    {
+        for (j = 0; j < 4; j++)
+        {
+            mat[i][j] = rand() % 2 + 4 * i;
+            printf("%d\t", mat[i][j]);
         }
         printf("\n");
     }
-}
-
-int main() {
-    int rows, cols;
-
-    printf("Enter the number of rows and columns: ");
-    scanf("%d %d", &rows, &cols);
-
-    int mat[rows][cols];
-    printf("Enter the elements of the matrix:\n");
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
-            scanf("%d", &mat[i][j]);
-        }
-    }
-
-    find_transpose(mat, rows, cols);
-
+    printf("\n");
+    printf("The transpose of a matrice is:\n");
+    transpose((int *)mat, 3, 4);
     return 0;
+}
+void transpose(int *mat, int row, int col)
+{
+    int i, j;
+    for (j = 0; j < col; j++)
+    {
+        for (i = 0; i < row; i++)
+        {
+
+            printf("%d\t", *(mat + (i * col) + j));
+        }
+        printf("\n");
+    }
 }
