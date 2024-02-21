@@ -8,14 +8,16 @@ your code and observe the result.*/
 int main()
 {
     
-    
+    int sum=0;
     #pragma omp parallel
     {
-        int sum=0;
+        
         int thread_id = omp_get_thread_num();
         for(int i=0;i<thread_id;i++)
+        {
             sum = sum + i;
-        printf("Thread id = %d Sum = %d\n",thread_id,sum);
+        }     
     }
+    printf("Sum = %d\n",sum);  
     return 0;
 }
