@@ -11,6 +11,6 @@ int main() {
     }
     // OpenMP parallel region ends here
 
-`    printf("\nI'm the master thread!\n");
+    printf("\nI'm the master thread!\n");
     return 0;
 }
