@@ -1,0 +1,9 @@
+make clean
+make
+sudo sh scull_unload
+sudo sh scull_load
+gcc use_semaphore.c
+./a.out  -----> w [ctr + c] to exit
+cat main.c> /dev/scull0
+./a.out -----> w [ctr + c] to exit
+cat /dev/scull0
