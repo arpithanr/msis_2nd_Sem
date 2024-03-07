@@ -1,0 +1,19 @@
+Develop a UML class diagram that models the working of computer labs in your department. It relates Students, Lab Instructor, weekly Lab Tasks, PCs, and Software installed on the PCs. There are two types of software installed i.e. System Software and Application Software. All the PCs are connected through LAN with a server which is being operated by a lab in charge. The lab in charge is also responsible for installation and maintenance of System and Application Software for all the systems in the lab. 
+
+Part - A 
+
+The tasks to be performed are: 
+
+Extract the main objects (entities) for above system. 
+Find the necessary attributes and functions that need to be associated with each object  
+Identify the relationships between these objects. 
+Construct a final comprehensive Class diagram showing all objects and their relationships along with their attributes and functions. 
+
+Part - B 
+
+Implement the main class which includes following points 
+
+Write class definition for all the classes specified in the UML class diagram. 
+Create at least three student objects by assigning PC’s with different system software configurations and application software in it.  
+Write few test cases to validate current object values. (use assert statements) 
+Validate the PC’s application software after uninstalling the current software and install a different software.
