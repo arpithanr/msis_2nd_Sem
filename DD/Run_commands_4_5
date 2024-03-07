@@ -1,0 +1,11 @@
+make clean
+make
+sudo sh scull_unload
+sudo sh scull_load
+/* after proc/pri enter tab you will get the name what you have saved
+cat /proc/printfirst50char
+cat main.c> /dev/scull0
+cat main.c> /dev/scull1
+cat main.c> /dev/scull2
+cat main.c> /dev/scull3
+cat /proc/printfirst50char
