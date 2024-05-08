@@ -1,3 +1,4 @@
+
 /*** Illustrating critical directive ***/
 /*** program to find the sum of elements of an array ***/
 

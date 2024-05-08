@@ -1,3 +1,4 @@
+
 /*1. Illustrate loop parallelism with the for loop by writing a program to calculate the sum of an array in parallel using
 OpenMP. (Use a shared variable for the result and private variables for loop indices). */
 
